@@ -2,8 +2,10 @@ import srcomapi, srcomapi.datatypes as dt
 import os
 api = srcomapi.SpeedrunCom(); api.debug = 1 
 
-a = api.search(srcomapi.datatypes.Game, {"name": "jak and daxter: the precursor legacy"})
+game = api.search(srcomapi.datatypes.Game, {"name": "jak and daxter: the precursor legacy"})[0]
+assert(game.name == "Jak and Daxter: The Precursor Legacy")
 
-Game = a[0]
+print(game.name)
 
-print(Game.records)
+print(game.categories)
+print(game.categories[1].records[0].runs[0]["run"].times)
