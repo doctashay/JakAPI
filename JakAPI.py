@@ -1,3 +1,8 @@
+# TO-DO # 
+# Propagate and list all runs from a certain category 
+# GUI
+# Check a user's PBs and wait for new PB 
+
 import srcomapi, srcomapi.datatypes as dt
 import os
 api = srcomapi.SpeedrunCom(); api.debug = 0
