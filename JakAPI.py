@@ -1,7 +1,8 @@
 # TO-DO # 
 # Propagate and list all runs from a certain category 
-# GUI
+# Barebones GUI framework - Eel?
 # Check a user's PBs and wait for new PB 
+# Add API Implementation for Personal Bests
 
 import srcomapi, srcomapi.datatypes as dt
 import os
@@ -19,3 +20,5 @@ print("Grabbing No FCS WR")
 print(game.categories[1].records[0].runs[0]["run"].times)
 print("Grabbing No LTS WR")
 print(game.categories[0].records[0].runs[0]["run"].times)
+for x in game.categories[0].records[0].runs[0]["run"].times:
+    print(x)
