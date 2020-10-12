@@ -20,12 +20,13 @@ print("Grabbing No FCS WR")
 print(game.categories[1].records[0].runs[0]["run"].times)
 print("Grabbing No LTS WR")
 print(game.categories[0].records[0].runs[0]["run"].times)
-for x in game.categories[0].records[0].runs[0]["run"].times:
-    print(x)
+
 
 
 def look_for_pb():
-    print("TODO")
+    print("Grabbing leaderboard information")
+    for x in game.categories[0].records[0].runs[0]["run"].times:
+        print(x)
     return True
 
 if look_for_pb():
