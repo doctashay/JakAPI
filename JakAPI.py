@@ -22,3 +22,13 @@ print("Grabbing No LTS WR")
 print(game.categories[0].records[0].runs[0]["run"].times)
 for x in game.categories[0].records[0].runs[0]["run"].times:
     print(x)
+
+
+def look_for_pb():
+    print("TODO")
+    return True
+
+if myFunction():
+        print("Yes")
+else:
+        print("No")
