@@ -28,7 +28,7 @@ def look_for_pb():
     print("TODO")
     return True
 
-if myFunction():
+if look_for_pb():
         print("Yes")
 else:
         print("No")
