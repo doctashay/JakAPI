@@ -20,16 +20,19 @@ print("Grabbing No FCS WR")
 print(game.categories[1].records[0].runs[0]["run"].times)
 print("Grabbing No LTS WR")
 print(game.categories[0].records[0].runs[0]["run"].times)
+print(game.categories[3].records[0].runs[0]["run"].times)
 
 
 
-def look_for_pb():
+def test_leaderboards():
     print("Grabbing leaderboard information")
     for x in game.categories[0].records[0].runs[0]["run"].times:
         print(x)
+    for y in game.categories[1].records[0].runs[1]["run"].times:
+        print(y)
     return True
 
-if look_for_pb():
+if test_leaderboards():
         print("Yes")
 else:
         print("No")
